@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Create an account</h3>
+    <form id="form" action="#" method="post" onsubmit="return validateForm()">
+        <label for="username1">Username</label>
+        <input type="text" id="username1" name="username"><br>
+        <span class="error" id="nameError1"></span><br>
+        
+        <label for="password1">Password</label>
+        <input type="password" id="password1" name="password"><br>
+        <span class="error" id="passwordError1"></span><br>
+        
+        <label for="confirmPassword1">Confirm Password</label>
+        <input type="password" id="confirmPassword1" name="confirmPassword"><br>
+        <span class="error" id="confirmPasswordError1"></span><br>
+        
+        <label for="dob1">Date of Birth</label>
+        <input type="date" id="dob1" name="dob"><br>
+        <span class="error" id="dobError1"></span><br>
+        
+        <label for="email1">Email</label>
+        <input type="email" id="email1" name="email"><br>
+        <span class="error" id="emailError1"></span><br>
+        
+        <label>Gender</label>
+        <input type="radio" id="male1" name="gender" value="Male">
+        <label for="male1">Male</label>
+        <input type="radio" id="female1" name="gender" value="Female">
+        <label for="female1">Female</label>
+        <input type="radio" id="other1" name="gender" value="Other">
+        <label for="other1">Other</label><br>
+        <span class="error" id="genderError1"></span><br>
+        
+        <label for="country1">Country</label>
+        <select id="country1" name="country">
+            <option value="">Select your Country</option>
+            <option value="India">India</option>
+            <option value="Malta">Malta</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+        </select><br>
+        <span class="error" id="countryError1"></span><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="validate.js"></script>
+</body>
+</html>

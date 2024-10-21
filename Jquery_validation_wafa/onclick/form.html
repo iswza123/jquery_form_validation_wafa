@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Create an account</h3>
+    <form id="form2" action="#" method="post">
+        <label for="username2">Username</label>
+        <input type="text" id="username2"><br>
+        <span class="error" id="nameError2"></span><br>
+
+        <label for="password2">Password</label>
+        <input type="password" id="password2"><br>
+        <span class="error" id="passwordError2"></span><br>
+
+        <label for="confirmPassword2">Confirm Password</label>
+        <input type="password" id="confirmPassword2"><br>
+        <span class="error" id="confirmPasswordError2"></span><br>
+
+        <label for="dob2">Date of Birth</label>
+        <input type="date" id="dob2"><br>
+        <span class="error" id="dobError2"></span><br>
+
+        <label for="email2">Email</label>
+        <input type="email" id="email2"><br>
+        <span class="error" id="emailError2"></span><br>
+
+        <label>Gender</label>
+        <input type="radio" id="male2" name="gender" value="Male">
+        <label for="male2">Male</label>
+        <input type="radio" id="female2" name="gender" value="Female">
+        <label for="female2">Female</label>
+        <input type="radio" id="other2" name="gender" value="Other">
+        <label for="other2">Other</label><br>
+        <span class="error" id="genderError2"></span><br>
+
+        <label for="country2">Country</label>
+        <select id="country2">
+            <option value="">Select your Country</option>
+            <option value="India">India</option>
+            <option value="Malta">Malta</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+        </select>
+        <span class="error" id="countryError2"></span><br>
+
+        <button type="button" onclick="validateform2()">Submit</button>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="validate.js"></script>
+</body>
+</html>
